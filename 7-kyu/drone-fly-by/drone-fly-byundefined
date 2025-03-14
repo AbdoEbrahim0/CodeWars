@@ -1,0 +1,15 @@
+#include <string>
+using namespace std;
+std::string flyBy(std::string lamp, std::string drone) {
+    for (int i = 0; i < drone.size(); i++)
+    {
+        if (drone[i] == '=')
+            lamp[i] = 'o';
+        else
+        {
+            lamp[i] = 'o';
+            break;
+        }
+    }
+    return lamp;
+}
